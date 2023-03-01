@@ -1,0 +1,214 @@
+.wrapper {
+  .columnTitle {
+    margin-bottom: 24px;
+    color: #262626;
+    font-weight: @fontWeight;
+    font-size: 16px;
+  }
+
+  .formRows {
+    display: flex;
+    flex-wrap: wrap;
+    .formItem {
+      position: relative;
+      width: 374px;
+
+      .spacerLine {
+        position: absolute;
+        top: calc(50% + 4px);
+        right: 12px;
+        width: 16px;
+        height: 2px;
+        background: #d8d8d8;
+        border-radius: 1px;
+      }
+    }
+
+    .optionValueWidth {
+      width: 342px;
+    }
+
+    .staging {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+
+      .saveContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        cursor: pointer;
+
+        .saveIcon {
+          width: 22px;
+          height: 22px;
+        }
+      }
+
+      .closeOption {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .itemLabel {
+    color: #262626;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .customLabel {
+    margin: -10px 0 0 -10px;
+    color: #262626;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .description {
+    margin-left: 6px;
+    color: #8c8c8c;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .inputWidth {
+    width: 334px;
+  }
+
+  .mt8 {
+    margin-top: 8px;
+  }
+
+  .mb8 {
+    margin-bottom: 8px;
+  }
+
+  .ml10 {
+    margin-left: -10px;
+  }
+
+  .mt24 {
+    margin-top: 24px;
+  }
+
+  .mb24 {
+    margin-bottom: 24px;
+  }
+
+  .statusItem {
+    color: #262626;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .removeIcon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  // 商品資料
+  .productInformation {
+    .selectPictureContainer {
+      .selectPictureLabel {
+        display: flex;
+        align-items: center;
+        color: #262626;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+
+        .questions {
+          width: 16px;
+          height: 16px;
+          margin-left: 2px;
+        }
+      }
+
+      .selectPictureContent {
+        display: flex;
+        margin-top: 8px;
+
+        .productList {
+          display: flex;
+
+          .productItem {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            margin: 0 12px 12px 0;
+
+            .productPicture {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+
+            .productRemove {
+              position: absolute;
+              top: -9px;
+              right: -9px;
+              width: 18px;
+              height: 18px;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .addPicture {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 60px;
+          height: 60px;
+          background: #fafafa;
+          border: 1px dashed #d9d9d9;
+          border-radius: 4px;
+          cursor: pointer;
+
+          .addIcon {
+            width: 24px;
+            height: 24px;
+          }
+
+          .addText {
+            color: #ffa21a;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .formProductWrapper {
+      padding: 24px 0 0;
+    }
+
+    .braftEditorWrapper {
+      .editorLabel {
+        margin-bottom: 9px;
+        color: #262626;
+        font-weight: 400;
+        font-size: 12px;
+      }
+
+      .braftEditor {
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+      }
+
+      .braftEditorContent {
+        height: 256px;
+      }
+    }
+  }
+}

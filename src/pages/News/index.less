@@ -1,0 +1,64 @@
+// @font-face{
+//   font-family: 'Gilroy-Medium';
+//   src: url('../../assets/font/Gilroy-Medium-2.otf');
+// }
+
+.mainContent {
+
+  .cardBox {
+    border-radius: 16px;
+    min-height: calc(100vh - 188px);
+    margin-bottom: 16px;
+    overflow: hidden;
+    // max-width: 1500px;
+
+    img {
+      max-width: 100%;
+    }
+
+    :global(.ant-card-head) {
+      height: 56px;
+    }
+
+    :global(.ant-card-body) {
+      padding: 24px;
+      word-break: break-all;
+    }
+
+    :global {
+      .ant-card-head-wrapper {
+        height: 56px;
+
+        .ant-card-head-title {
+          display: flex;
+          align-items: center;
+          padding: 0;
+          height: 56px;
+          white-space: normal;
+        }
+      }
+    }
+
+    .titleBox {
+      line-height: 30px;
+      font-size: 24px;
+      color: #3C3A35;
+      font-weight: 500;
+      max-height: 60px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
+    .source {
+      margin-top: 24px;
+      margin-bottom: 32px;
+      font-size: 12px;
+      color: #AFADAB;
+      text-align: center;
+      line-height: 12px;
+    }
+  }
+}
+

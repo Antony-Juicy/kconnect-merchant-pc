@@ -1,0 +1,239 @@
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+
+.menu {
+  padding: 12px;
+
+  :global(.anticon) {
+    margin-right: 8px;
+  }
+
+  :global(.ant-dropdown-menu-item) {
+    // min-width: 160px;
+    width: 254px;
+    height: 56px;
+    padding: 0;
+    border-radius: 8px;
+
+    :global(.ant-dropdown-menu-title-content) {
+      display: flex;
+      align-items: center;
+      color: #3c3a35;
+      font-size: 16px;
+      line-height: 16px;
+
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+.right {
+  display: flex;
+  float: right;
+  height: 32px;
+  margin-left: auto;
+  overflow: hidden;
+
+  .action {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    // padding: 0 12px;
+    cursor: pointer;
+    transition: all .3s;
+
+    >span {
+      vertical-align: middle;
+    }
+
+    &:hover {
+      background: @pro-header-hover-bg;
+    }
+
+    &:global(.opened) {
+      background: @pro-header-hover-bg;
+    }
+  }
+
+  .search {
+    padding: 0 12px;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .account {
+    .name {
+      max-width: 200px;
+      overflow: hidden;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      white-space: nowrap;
+      text-align: right;
+      text-overflow: ellipsis;
+    }
+
+    .avatar {
+      margin-right: 8px;
+      color: @primary-color;
+      vertical-align: top;
+      background: rgba(255, 255, 255, 85%);
+    }
+
+    .default-avatar {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      color: #fff;
+      font-weight: @fontWeight;
+      font-size: 16px;
+      text-align: center;
+      background: #fba21f;
+      border-radius: 50%;
+    }
+  }
+}
+
+// @media only screen and (max-width: @screen-md) {
+//   :global(.ant-divider-vertical) {
+//     vertical-align: unset;
+//   }
+//   .name {
+//     display: none;
+//   }
+//   .right {
+//     position: absolute;
+//     top: 0;
+//     right: 12px;
+//     .account {
+//       .avatar {
+//         margin-right: 0;
+//       }
+//     }
+//     .search {
+//       display: none;
+//     }
+//   }
+// }
+.perfectdataBtn {
+  height: 34px;
+  margin-right: 13px;
+  padding-top: 6px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.perfectdataImg {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.updateNotification {
+  display: flex;
+  align-items: center;
+  margin-right: 13px;
+  cursor: pointer;
+
+  .noticeIcon {
+    width: 24px;
+    height: 24px;
+
+  }
+
+  :global {
+    .ant-badge-dot {
+      top: 2px;
+      right: 5.3px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+.confirmModal {
+  z-index: 10000;
+
+  :global {
+    .ant-modal-content {
+      width: 460px;
+      height: 346px;
+      background: #fff;
+      border-radius: 16px;
+
+      .ant-modal-body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .ant-modal-close-x {
+      display: none;
+    }
+  }
+
+  .success {
+    width: 80px;
+    height: 80px;
+    margin-top: 36px;
+  }
+
+  .bigTxt {
+    margin-top: 24px;
+    color: #3c3a35;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .subTxt {
+    margin-top: 12px;
+    color: #3c3a35;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  .confirm {
+    width: 104px;
+    height: 38px;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    background: #ffa400;
+    border-radius: 8px;
+  }
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 10%);
+
+  .spinBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}

@@ -1,0 +1,37 @@
+.pictureContent {
+  display: flex;
+  align-items: center;
+}
+
+.pictureList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 3px 0 0 18px;
+
+  .pictureItem {
+    height: 40px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+.warehouse-table {
+  margin: 16px -24px 0 -24px;
+  :global {
+    .ant-table-cell {
+      white-space: nowrap;
+      word-break: keep-all;
+    }
+
+    .ant-table-footer {
+      padding: 7px 16px;
+      color: #ffa21a;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: right;
+      border-end-start-radius: 4px;
+      border-end-end-radius: 4px;
+    }
+  }
+}

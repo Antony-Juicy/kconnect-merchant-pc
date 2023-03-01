@@ -1,0 +1,98 @@
+.layout {
+  :global {
+    .ant-layout {
+      padding-bottom: 16px !important;
+    }
+  }
+}
+
+.noDataImg {
+  width: 232px;
+  height: 64px;
+}
+
+.noDataFavContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 231px);
+
+}
+
+.wrapper {
+  width: 100%;
+  padding: 20px 24px 0;
+  background: #fff;
+  border-radius: 8px;
+
+  .topContainer {
+    width: 100%;
+    min-height: calc(100vh - 280px);
+    margin-top: 8px;
+  }
+
+  .openAppList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .noDataContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: calc(100vh - 374px);
+
+
+    }
+
+
+  }
+
+  .favAppList {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .tab {
+    :global {
+      .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: #262626;
+      }
+
+      .ant-tabs-tab {
+        margin: 0 0 0 40px;
+        color: #262626;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+
+        &:nth-child(1) {
+          margin-left: 0;
+        }
+      }
+
+    }
+  }
+
+
+  .exporeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% + 48px);
+    height: 38px;
+    margin-left: -24px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #ffa21a;
+    border-radius: 0 0 4px 4px;
+    cursor: pointer;
+
+  }
+}

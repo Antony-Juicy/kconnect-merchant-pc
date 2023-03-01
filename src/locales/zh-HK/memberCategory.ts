@@ -1,0 +1,25 @@
+export default {
+  'memberCategory.memberCategoryName': '類別名稱',
+  'memberCategory.memberCategoryName.placeholder': '請輸入類別名稱',
+  'memberCategory.memberCategoryName.required': '請填寫類別名稱',
+  'memberCategory.description': '類別簡介',
+  'memberCategory.description.placeholder': '請輸入類別簡介',
+  'memberCategory.description.required': '請填寫類別簡介',
+  'memberCategory.memberCategoryTagList': '類別標籤',
+  'memberCategory.memberCategoryTagList.placeholder': '請輸入類別標籤',
+  'memberCategory.memberCount': '會員總數',
+  'memberCategory.addTaps': '添加標籤',
+  'memberCategory.errMsg': '限30字內的中文或英文標籤，不可包括符號及表情等元素',
+  'memberCategory.memberList': '會員列表',
+
+  'memberCategory.edit': '編輯類別',
+  'memberCategory.selectMember': '選取會員',
+  'memberCategory.plese.selectMember': '請選取會員',
+  'memberCategory.click': '點擊選擇',
+  'memberCategory.list': '會員列表',
+  'memberCategory.addMember.emptyText': '未搜尋到會員信息',
+
+  'memberCategory.err.name': '單個類別只能新建10個標籤',
+  'memberCategory.err.tags.length': '單個類別只能新建10個標籤',
+  'memberCategory.err.tags.name': '重複標籤',
+}

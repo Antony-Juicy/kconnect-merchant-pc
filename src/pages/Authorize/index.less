@@ -1,0 +1,143 @@
+.wrapper {
+  min-width: 548px;
+  background-color: #F4F5F7;
+  // padding: 80px 24px;
+  min-height: 100vh;
+
+  .header {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    background-color: #fff;
+
+    .KConnectIcon {
+      width: 108px;
+      height: 31px;
+    }
+  }
+
+  .cardBox {
+    max-width: 1200px;
+    min-width: 500px;
+    height: calc(~'100vh - 100px');
+    margin: 0 auto;
+    margin-top: 24px;
+    background: #FFFFFF;
+    border-radius: 16px;
+  }
+
+  .cardBody {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    .iconWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 120px;
+      width: 324px;
+      height: 124px;
+
+      .iconBox {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 120px;
+        background: #FFFFFF;
+        border: 2px solid #E8E8E8;
+        border-radius: 10px;
+        overflow: hidden;
+
+        .imgMask {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          top: 0;
+          left: 0;
+          z-index: 2;
+          width: 120px;
+          height: 120px;
+          background-color: rgba(211, 211, 211, 0.1);
+        }
+
+        .KConnectIcon {
+          width: 108px;
+          height: 31px;
+        }
+
+        .targetImg {
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      .linkIcon {
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+      }
+    }
+
+    .txtBox {
+      margin-top: 39px;
+      width: 700px;
+      min-height: 64px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: space-between;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+      font-weight: 500;
+      font-size: 16px;
+      color: #3C3A35;
+      line-height: 20px;
+
+      .text {
+        margin-bottom: 31px;
+      }
+    }
+
+    .btnBox {
+      width: 264px;
+      height: 40px;
+      margin-top: 122px;
+      display: flex;
+      justify-content: space-between;
+
+      .ok {
+        background-color: #FBA21F;
+        color: #fff;
+        width: 120px;
+        height: 40px;
+        padding: 0;
+        border-radius: 8px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        border: none;
+      }
+
+      .cancel {
+        background-color: #F7F7F7;
+        color: #3C3A35;
+        width: 120px;
+        height: 40px;
+        border-radius: 8px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+      }
+    }
+  }
+}

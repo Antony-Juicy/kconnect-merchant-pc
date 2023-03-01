@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url('~@/assets/font/Gilroy-Medium-2.otf');
+}
+
+.pay {
+  .emptyBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 221px;
+    height: calc(28.23vw - 56px);
+
+    .emptyImg {
+      width: 12.5vw;
+      height: 11.11vw;
+    }
+
+    .tip {
+      color: #bfbfbf;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+
+    }
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    height: 2.91vw;
+    margin-bottom: 1.25vw;
+
+    .content {
+      min-width: 200px;
+      height: 2.91vw;
+
+      .title {
+        margin-bottom: 1.35vw;
+        color: #3c3a35;
+        font-weight: @fontWeight;
+        font-size: 16px;
+        line-height: 16px;
+      }
+
+      .info {
+        width: 100%;
+        color: #3c3a35;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+
+        .value {
+          color: #fba21f;
+        }
+      }
+    }
+  }
+
+  .list {
+    height: 28.23vw;
+  }
+
+
+  .statistic-table {
+    padding-bottom: 0;
+    overflow: hidden;
+
+    .statistic-table-list-th {
+      margin-bottom: 17px;
+      padding-bottom: 16px;
+      color: #85827d;
+      font-weight: 400;
+      font-size: 14px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .statistic-table-list-th-tips {
+      margin-left: 9px;
+      color: #afadab;
+      font-size: 10px;
+    }
+
+    .statistic-table-money {
+      width: 100%;
+      padding-right: 8px;
+      overflow: hidden;
+      font-weight: 500;
+      font-size: 16px;
+      font-family: Gilroy-Medium;
+      white-space: nowrap;
+      text-align: right;
+      text-overflow: ellipsis;
+    }
+
+    .statistic-progress {
+      font-weight: 500;
+      font-size: 16px;
+      font-family: Gilroy-Medium;
+    }
+
+    .statistic-table-type {
+      display: flex;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .statistic-table-icon {
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin-right: 14px;
+      background: @primary-color;
+      border-radius: 24px;
+    }
+
+    .statistic-table-list-td {
+      margin-bottom: 30px;
+    }
+
+    .statistic-table-body {
+      height: 221px;
+      height: calc(28.23vw - 56px);
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #f7f7f7;
+        border-radius: 3px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #afadab;
+        border-radius: 5px;
+      }
+    }
+  }
+}

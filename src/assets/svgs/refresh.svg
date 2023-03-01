@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 80 80" class="design-iconfont">
+  <defs>
+    <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="dcp2hy01ia">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" in="shadowBlurOuter1"/>
+    </filter>
+    <path id="s8ikpjv51b" d="M40 5A35 35 0 1 0 40 75A35 35 0 1 0 40 5Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g>
+      <use fill="#000" filter="url(#dcp2hy01ia)" xlink:href="#s8ikpjv51b"/>
+      <use fill="#FFF" xlink:href="#s8ikpjv51b"/>
+    </g>
+    <g stroke="#85827D" stroke-linecap="round" stroke-width="4">
+      <path d="M32.6201,10 C29.6747,4.0731 23.5586,2.84217094e-14 16.4912,2.84217094e-14 C9.4237,2.84217094e-14 3.4454,4.0731 0.5,10" transform="rotate(-45 54.61639919 1.23654403)"/>
+      <path d="M0.5 2L0.5 10" transform="rotate(-45 54.61639919 1.23654403)"/>
+      <path d="M7.2803 10L0.50013 10" transform="rotate(-45 54.61639919 1.23654403)"/>
+      <path d="M0.5,26 C3.4454,31.9269 9.5615,36 16.629,36 C23.6964,36 29.6747,31.9269 32.6201,26" transform="rotate(-45 54.61639919 1.23654403)"/>
+      <path d="M32.6201 34L32.6201 26" transform="rotate(-45 54.61639919 1.23654403)"/>
+      <path d="M25.8398 26L32.62 26" transform="rotate(-45 54.61639919 1.23654403)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,120 @@
+.appItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(50% - 8px);
+  min-width: 500px;
+  height: 275px;
+  margin-bottom: 16px;
+  padding: 16px 16px 0;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:nth-child(1),
+  &:nth-child(3),
+  &:nth-child(5) {
+    margin-right: 16px;
+  }
+
+  .topContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  .topLeftContainer {
+    display: flex;
+    width: 70%;
+  }
+
+  .highLight {
+    max-height: 92px;
+    overflow: hidden;
+  }
+
+  .topCenterContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+
+    .appName {
+      margin-bottom: 2px;
+      color: #262626;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .appDescribe {
+      margin-bottom: 0;
+      color: #8c8c8c;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  .appIconContainer {
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+    background-color: #d9d9d9;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 48px 48px;
+    border-radius: 4px;
+  }
+
+  .appIcon {
+    width: 100%;
+    height: 100%;
+  }
+
+  .thumbsUp {
+    width: 24px;
+    height: 24px;
+  }
+
+  .topRightContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: left;
+    width: 24px;
+  }
+
+  .appTip {
+    margin-bottom: 5px;
+    color: #262626;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .subTip {
+    margin-bottom: 4px;
+    color: #8c8c8c;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .bottomContainer {
+    display: flex;
+    align-items: center;
+    width: calc(100% + 32px);
+    height: 66px;
+    margin-left: -16px;
+    padding-left: 16px;
+    border-top: 1px solid #f0f0f0;
+
+    .price {
+      width: 95%;
+      margin-bottom: 0;
+      color: #ffa21a;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

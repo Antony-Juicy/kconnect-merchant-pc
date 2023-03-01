@@ -1,0 +1,109 @@
+.sku-detail-drawer {
+  .select-input {
+    width: 334px;
+    min-height: 34px;
+
+    :global {
+      .ant-select-selector {
+        border-radius: 4px;
+      }
+
+      .ant-select-selection-overflow {
+        gap: 6px;
+        padding: 3px 2px;
+      }
+    }
+  }
+
+  .detail-set-sep-wapper {
+    height: 100%;
+  }
+
+  .del-sku-icon {
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  .option-tips {
+    height: 20px;
+    color: #8c8c8c;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .option-item {
+    height: 20px;
+    color: #262626;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .option-wapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .detail-set-sep {
+    display: inline-block;
+    justify-content: center;
+    width: 16px;
+    height: 2px;
+    margin: 0 12px;
+    background: #d8d8d8;
+    border-radius: 1px;
+  }
+
+  .option-tag-wapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 22px;
+    padding: 1px 6px 1px 4px;
+    color: #262626;
+    font-size: 12px;
+    line-height: 20px;
+    background: #f5f5f5;
+    border-radius: 2px;
+    overflow: hidden;
+    span{
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .option-tag-item{
+      display: block;
+      max-width: 295px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .option-tag-icon{
+      position: relative;
+      width: 12px;
+      height: 100%;
+      margin-left: 8px;
+      cursor: pointer;
+    }
+
+    .close{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 9px;
+      height: 9px;
+      margin-top: -4px;
+      margin-left: -4px;
+      color: #fff;
+      font-size: 7px;
+      background-color: #bfbfbf;
+      border-radius: 12px;
+    }
+  }
+}

@@ -1,0 +1,254 @@
+.card {
+  border-radius: 16px;
+  margin-bottom: 24px;
+  word-break: break-all;
+
+  img {
+    max-width: 100%;
+  }
+
+  .cardTitle {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3C3A35;
+    line-height: 16px;
+  }
+
+  :global {
+    .ant-card-head {
+      border-bottom: none;
+    }
+    .ant-card-head-wrapper {
+      border-bottom: 1px solid #E8E8E8;
+    }
+    .ant-card-head-title {
+      padding: 24px 0;
+      height: 96px;
+    }
+  }
+}
+
+.appBox {
+  height: 56px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .titleBox {
+    width: 360px;
+  }
+}
+
+.titleNode {
+  display: flex;
+  height: 40px;
+
+  .appIcon {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    margin-right: 12px;
+  }
+
+  .iconInfo {
+    width: 300px;
+    height: 48px;
+
+    .name {
+      margin-top: 3px;
+      margin-bottom: 7px;
+      height: 18px;
+      font-size: 16px;
+      color: #3C3A35;
+      line-height: 18px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .info {
+      height: 18px;
+      font-size: 12px;
+      color: #85827D;
+      height: 18px;
+      line-height: 18px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.extraBtn {
+  width: 104px;
+  height: 38px;
+  background: #FFA400;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 38px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modalWrap {
+  :global {
+    .ant-modal-content {
+      height: 402px;
+      border-radius: 16px;
+
+      .ant-modal-close-x {
+        display: none;
+      }
+
+      .ant-modal-header {
+        padding: 0 !important;
+        height: 73px !important;
+        border-bottom: none;
+        border-radius: 16px 16px 0 0;
+
+        .ant-modal-title {
+          padding-top: 40px;
+          text-align: center;
+          height: 33px;
+          font-weight: 500;
+          font-size: 24px;
+          color: #3C3A35;
+        }
+      }
+
+      .ant-modal-body {
+        margin: 0 auto;
+        padding: 24px 0 0 0 !important;
+        width: 380px;
+
+        .ant-form-item {
+          margin-bottom: 46px;
+
+          .ant-form-item-explain {
+            position: absolute;
+            top: 48px;
+          }
+        }
+      }
+
+      .ant-modal-footer {
+        width: 380px;
+        margin: 0 auto;
+        padding: 23px 0 40px 0;
+        border-top: none;
+
+        & > div {
+          justify-content: space-between;
+        }
+
+        .ant-space.ant-space-horizontal.ant-space-align-center {
+          width: 380px;
+          justify-content: space-between;
+          flex-wrap: nowrap;
+        }
+      }
+    }
+  }
+
+  .input {
+    position: relative;
+    width: 380px;
+    height: 48px;
+    background: #FCFCFC;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #AFADAB;
+    line-height: 48px;
+
+    :global {
+      .ant-input {
+        background: #FCFCFC;
+      }
+    }
+  }
+
+  .resetBtn, .submitBtn {
+    padding: 0 !important;
+    width: 178px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 48px;
+    border: none;
+  }
+
+  .resetBtn {
+    background: #F7F7F7;
+    color: #3C3A35;
+  }
+
+  .submitBtn {
+    background: #FBA21F;
+    color: #FFFFFF;
+  }
+}
+
+.confirm {
+
+  :global {
+    .ant-modal-content {
+      width: 460px;
+      height: 346px;
+      background: #FFF;
+      border-radius: 16px;
+
+      .ant-modal-body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .ant-modal-close-x {
+      display: none;
+    }
+  }
+
+  .success {
+    margin-top: 60px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .bigTxt {
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #3C3A35;
+    text-align: center;
+    line-height: 18px;
+  }
+
+  .smallTxt {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #3C3A35;
+    text-align: center;
+    line-height: 14px;
+  }
+
+  .modalClose {
+    margin-top: 40px;
+    width: 120px;
+    height: 38px;
+    background: #FFA400;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+  }
+}

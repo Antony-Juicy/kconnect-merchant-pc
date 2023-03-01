@@ -1,0 +1,115 @@
+.caseItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(25% - 12px);
+  // height: 265px;
+  margin-right: 16px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:nth-child(4) {
+    margin-right: 0;
+  }
+
+  .topContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .imgContainer {
+      width: 100%;
+      background: #F5F5F5;
+      border-radius: 3px 3px 0 0;
+      // height: 160px;
+      margin-bottom: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 3px 3px 0 0;
+    }
+
+    .caseImg {
+      width: 100%;
+      // height: 100%;
+      // max-height: 160px;
+
+    }
+
+    .centerContainer {
+      width: 100%;
+      padding: 0 12px;
+    }
+
+    .caseTitle {
+      width: 96%;
+      margin-bottom: 2px;
+      color: #262626;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .caseIntroduction {
+      width: 96%;
+      margin-bottom: 8px;
+      color: #8c8c8c;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  .bottomContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 40px;
+    margin: 0 12px;
+    border-top: 1px solid #f0f0f0;
+
+    .bottomLeftContainer {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      max-width: calc(100% - 80px);
+    }
+
+    .caseIconContainer {
+      width: 24px;
+      min-width: 24px;
+      height: 24px;
+      min-height: 24px;
+      margin-right: 8px;
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+
+      .caseIcon {
+        width: 24px;
+        height: 24px;
+      }
+
+    }
+
+    .caseName {
+      max-width: 100%;
+      margin-bottom: 0;
+      color: #8c8c8c;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+
+    }
+
+    .caseDate {
+      min-width: 53px;
+      color: #8c8c8c;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 20px;
+    }
+  }
+}

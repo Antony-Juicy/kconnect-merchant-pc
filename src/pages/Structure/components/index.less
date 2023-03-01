@@ -1,0 +1,125 @@
+.base-drawer {
+  :global {
+    .ant-drawer-content {
+      border-radius: 8px;
+    }
+    .ant-drawer-content-wrapper {
+      width: 400px !important;
+    }
+    .ant-drawer-header-title {
+      flex-direction: row-reverse;
+    }
+    .ant-drawer-close {
+      margin-left: 12px;
+      margin-right: 0;
+    }
+  }
+  .base-drawer-close-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .drawer-input {
+    height: 38px;
+    border-radius: 8px;
+    background: #F7F7F7;
+    &:focus {
+      caret-color: @primary-color;
+      background-color: #fff;
+    }
+  }
+  .drawer-form-item {
+    margin-bottom: 24px;
+  }
+  .drawer-btn {
+    border-radius: 8px;
+  }
+  .drawer-danger-btn {
+    background: rgba(252, 44, 44, .1);
+    color: #FC2C2C;
+    border: none;
+  }
+  .drawer-cancel-btn {
+    width: 80px;
+    background: #F7F7F7;
+  }
+  .drawer-confirm-btn {
+    width: 111px;
+    background: #FBA21F;
+  }
+}
+
+.member-popover-wapper {
+  .member-popover-item-avatar {
+    width: auto !important;
+    height: auto !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
+  }
+}
+
+.add-member-drawer {
+  .account-tips {
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #AFADAB;
+  }
+
+
+  .member-drawer-form-label {
+    color: #AFADAB;
+    margin-bottom: 8px;
+  }
+
+  .drawer-form-item {
+    :global {
+      .ant-input {
+        font-size: 16px;
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .member-avatar {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #E8E8E8;
+    border-radius: 50%;
+  }
+
+  .member-person-circle-avatar {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 2.6;
+    background: #FBA21F;
+    border-radius: 50%;
+    font-weight: @fontWeight;
+    font-size: 31px;
+    color: #FFF;
+    text-align: center;
+    object-fit: cover;
+    border: 0.5px solid #E8E8E8;
+  }
+
+  .member-name {
+    font-size: 24px;
+    margin: 12px 0;
+  }
+
+  .member-position {
+    color: #85827D;
+    margin-bottom: 24px;
+  }
+
+  .member-divider {
+    color: #E8E8E8;
+    margin-bottom: 24px;
+  }
+
+  .close-button {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,136 @@
+.closeIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.baseModal {
+  :global {
+    .ant-modal-content {
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .ant-modal-header {
+      padding: 16px 40px;
+
+      .ant-modal-title {
+        height: 24px;
+        color: #262626;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: center;
+      }
+    }
+
+    .ant-modal-body {
+      color: #262626;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .ant-modal-footer {
+      padding: 20px;
+    }
+
+    .ant-modal-close-x {
+      font-size: 0;
+    }
+  }
+
+  &.titleLeft {
+    :global(.ant-modal-content .ant-modal-header .ant-modal-title) {
+      text-align: left;
+    }
+  }
+}
+
+.baseConfirm {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 8px;
+
+  .titleNode {
+    display: flex;
+    justify-content: center;
+    height: 64px;
+    margin: 0 auto;
+    padding-top: 40px;
+    color: #262626;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    .iconBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+
+      img {
+        width: 24px;
+        height: 25px;
+      }
+    }
+
+    .mr8 {
+      margin-right: 8px;
+    }
+  }
+
+  :global {
+    .ant-modal-content {
+      border-radius: 8px;
+
+      .ant-modal-close {
+        display: none;
+      }
+
+      .ant-modal-header {
+        height: 64px;
+        padding: 0 24px;
+        border-bottom: none;
+      }
+
+      .ant-modal-body {
+        padding: 40px 24px 0;
+        color: #262626;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+      }
+
+      .ant-modal-footer {
+        display: flex;
+        justify-content: end;
+        margin-top: 20px;
+        padding: 24px 24px 44px;
+        border-top: none;
+      }
+
+      .ant-modal-footer .ant-btn+.ant-btn:not(.ant-dropdown-trigger) {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
+.noChildren {
+  :global {
+    .ant-modal-body {
+      padding: 0 !important;
+    }
+  }
+}
+
+.baseModal.btnMiddle {
+  :global(.ant-modal-footer) {
+    text-align: center;
+  }
+}
+
+.baseConfirm.btnMiddle {
+  :global(.ant-modal-footer) {
+    justify-content: center;
+  }
+}

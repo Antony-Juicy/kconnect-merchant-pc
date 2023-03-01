@@ -1,0 +1,291 @@
+.mask {
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 60%);
+  inset: 0;
+}
+
+.guideStep {
+  position: absolute;
+  z-index: 101;
+  border-radius: 8px;
+}
+
+.guideStepSecond {
+  left: -304px;
+}
+
+.contentMask {
+  position: absolute;
+  z-index: 102;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  pointer-events: auto;
+}
+
+.centerContainer {
+  margin-right: 1.2vw;
+  background-color: #f3f5f7;
+  border-radius: 8px;
+}
+
+.guide {
+  z-index: 101;
+}
+
+.guideDisplayNone {
+  display: none;
+}
+
+.guideStepSecondContainer {
+  position: absolute;
+  z-index: 101;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.guideFirst {
+  position: absolute;
+  z-index: 101;
+  flex-direction: row;
+  width: 280px;
+  height: 148px;
+  padding: 20px 16px 16px 20px;
+  background: #fff;
+  border-radius: 8px;
+
+  .guideFirstTitle {
+    color: #262626;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .guideFirstSubTitle {
+    margin-top: 8px;
+    color: #8c8c8c;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .BottomContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .guideFirstState {
+    display: flex;
+    display: inline-flex;
+    align-items: center;
+    color: #bfbfbf;
+    line-height: 22px;
+  }
+
+  .guideFirstNextBtn {
+    width: 74px;
+    height: 34px;
+    background: #ffa21a;
+    border-radius: 4px;
+  }
+}
+
+.dashboardTitle {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+
+  .name {
+    color: #3c3a35;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 80px;
+  }
+
+  .date {
+    color: #3c3a35;
+    font-size: 16px;
+    line-height: 80px;
+  }
+}
+
+.dashBoard {
+  position: relative;
+
+  :global {
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+
+  .pr24 {
+    padding-right: 24px;
+  }
+
+  .cardBox {
+    margin-bottom: 1.2vw;
+    padding: 1.2vw;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 8px;
+  }
+
+  .updateAnnounceBox {
+    margin-bottom: 1.2vw;
+    padding: 1.2vw;
+    padding: 1.39vw 1.66vw 1.6vw;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 8px;
+  }
+
+  .l1 {
+    height: 32.5vw;
+  }
+
+  .l2 {
+    height: 34.9vw;
+    margin-bottom: 0;
+  }
+
+  .r1 {
+    padding: 0;
+  }
+
+  .r2 {
+    // height: 12.7vw;
+    height: 19.4vw;
+  }
+
+  .r3 {
+    height: 21.39vw;
+    padding: 1.39vw 1.6vw;
+  }
+
+  .r4 {
+    position: relative;
+    z-index: 1;
+    height: 19.4vw;
+    // height: 13.1vw;
+    padding: 0;
+  }
+
+  .titleNode {
+    display: flex;
+    height: 48px;
+
+    .appIcon {
+      width: 48px;
+      height: 48px;
+      margin-right: 12px;
+      border-radius: 4px;
+    }
+
+    .iconInfo {
+      min-width: 144px;
+      max-width: 300px;
+      height: 48px;
+
+      .name {
+        height: 18px;
+        margin-top: 3px;
+        margin-bottom: 7px;
+        overflow: hidden;
+        color: #3c3a35;
+        font-size: 16px;
+        line-height: 18px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .info {
+        height: 18px;
+        overflow: hidden;
+        color: #85827d;
+        font-size: 12px;
+        line-height: 18px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+.infoContentModal {
+  height: 318px;
+
+  :global {
+    .ant-modal-header .ant-modal-title > div {
+      color: #262626;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    .ant-form-item-label > label {
+      font-size: 12px;
+    }
+  }
+
+  .state {
+    margin: 0 auto;
+    padding-top: 0;
+    color: #8c8c8c;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .meansContent {
+    height: 238px;
+    text-align: center;
+  }
+
+  .staffContent {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  .inputAltitude {
+    width: 280px;
+    height: 34px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+  }
+
+  .infoRow {
+    width: 640px;
+  }
+
+  .btnContent {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  .btn {
+    width: 100px;
+    height: 34px;
+    background: #ffa21a;
+    border-radius: 4px;
+  }
+
+  :global {
+    .ant-modal-content .ant-modal-body {
+      padding-top: 16px;
+    }
+
+    .ant-form-item-explain-error {
+      padding-left: 6px;
+      text-align: left;
+    }
+
+    .ant-modal-content .ant-modal-footer {
+      margin-top: 0;
+    }
+  }
+}

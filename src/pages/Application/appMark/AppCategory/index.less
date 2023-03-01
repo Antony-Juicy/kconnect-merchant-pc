@@ -1,0 +1,65 @@
+.guideThird {
+  z-index: 101;
+}
+
+.appItem {
+  cursor: pointer;
+  width: calc(25% - 12px);
+  display: flex;
+  margin-right: 16px;
+  flex-direction: row;
+  height: 72px;
+  background: #F5F5F5;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .appIconContainer {
+    background-color: #D9D9D9;
+    width: 39px;
+    height: 40px;
+    max-width: 39px;
+    margin-right: 13px;
+    border-radius: 4px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .appIcon {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .rightContainer {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+
+    :global {
+      .ant-typography p {
+        margin-bottom: 0;
+      }
+    }
+
+    .appName {
+      font-weight: 400;
+      font-size: 16px;
+      color: #434343;
+      line-height: 24px;
+      margin-bottom: 0;
+    }
+
+    .appDescribe {
+      font-weight: 400;
+      font-size: 12px;
+      color: #85827D;
+      margin-bottom: 0;
+
+    }
+  }
+}

@@ -1,0 +1,185 @@
+@import url('~antd/lib/style/themes/default.less');
+
+@fontWeight: 600;
+
+@media only screen and (min-width: 1681px) {
+  html {
+    font-size: 100px !important;
+  }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1680px) {
+  html {
+    font-size: 90px !important;
+  }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  html {
+    font-size: 80px !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 70px !important;
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: Gilroy, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC',
+    '微軟正黑體', 'Microsoft YaHei', 'Source Han Sans SC', 'Noto Sans CJK SC', sans-serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+.ant-btn-primary {
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.ant-btn {
+  box-shadow: none;
+}
+
+canvas {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.text-bold {
+  font-weight: @fontWeight;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
+.clearfix {
+  &::after {
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+    content: ' ';
+  }
+}
+
+.padding-none {
+  padding: 0;
+}
+
+.scroll-table-wrapper {
+  &>.ant-layout>.ant-layout {
+    width: 0;
+  }
+}
+
+.nice-scroll {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 9px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #f7f7f7;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #afadab;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(-ms-high-contrast: active),
+  (-ms-high-contrast: none) {
+  body .ant-design-pro>.ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.primary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 74px;
+  height: 34px;
+  padding: 0 16px;
+  font-size: 14px;
+  border-radius: 4px;
+
+  span {
+    height: 22px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  img, svg {
+    width: 22px;
+    height: 22px;
+  }
+}

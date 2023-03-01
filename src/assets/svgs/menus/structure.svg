@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" class="design-iconfont">
+  <g stroke="#3C3A35" stroke-width="1.2" fill="none" fill-rule="evenodd">
+    <rect stroke-linejoin="round" x="6.30316162" y="2.51161385" width="5.39367676" height="3.46417809" rx="1"/>
+    <path d="M9 5.72416306L9 11.1453343"/>
+    <rect stroke-linejoin="round" x="7.24011057" y="10.8346428" width="3.51977887" height="3.51977887" rx="1"/>
+    <rect stroke-linejoin="round" x="1.37906854" y="10.8346428" width="3.51977887" height="3.51977887" rx="1"/>
+    <rect stroke-linejoin="round" x="13.1132337" y="10.8346428" width="3.51977887" height="3.51977887" rx="1"/>
+    <path d="M3.02850533,11.1453343 L3.02850533,9.9509201 C3.02850533,8.84635061 3.92393583,7.9509201 5.02850533,7.9509201 L12.9744186,7.9509201 C14.0789881,7.9509201 14.9744186,8.84635061 14.9744186,9.9509201 L14.9744186,11.1453343 L14.9744186,11.1453343"/>
+  </g>
+</svg>

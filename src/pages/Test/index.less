@@ -1,0 +1,61 @@
+@font-face{
+  font-family: 'Gilroy-Medium';
+  src: url('../../assets/font/Gilroy-Medium-2.otf');
+}
+
+.mainContent {
+  padding: 24px 32px 0 32px;
+  height: calc(~'100vh - 56px - 48px');
+
+  .cardBox {
+    border-radius: 16px;
+    margin-bottom: 64px;
+    overflow: hidden;
+
+    :global(.ant-card-head) {
+      height: 64px;
+      border-bottom: none;
+    }
+
+    :global(.ant-card-body) {
+      padding: 0;
+      padding-bottom: 24px;
+    }
+
+    .listItem {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      padding-right: 24px;
+      margin: 0 24px;
+      height: 62px;
+      cursor: pointer;
+
+      .txtBox {
+        line-height: 20px;
+        font-size: 16px;
+        color: #3C3A35;
+        max-height: 40px;
+        word-break: break-all;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+
+      
+
+      &::after {
+        position: absolute;
+        top: 23px;
+        right: 0;
+        content: '';
+        background: url('../../assets/images/common/helpcenter.png') center center no-repeat;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+

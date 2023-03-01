@@ -1,0 +1,53 @@
+.appItem {
+  cursor: pointer;
+  width: calc(33.33% - 16px);
+  display: flex;
+  margin-right: 24px;
+  flex-direction: row;
+  align-items: center;
+  height: 90px;
+  background: #F5F5F5;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 22px;
+
+  &:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  .appIcon {
+    width: 48px;
+    height: 48px;
+    margin-right: 13px;
+  }
+
+  .rightContainer {
+    width: 78%;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    :global {
+      .ant-typography p {
+        margin-bottom: 0;
+      }
+    }
+
+    .appName {
+      font-weight: 500;
+      font-size: 16px;
+      color: #262626;
+      line-height: 24px;
+      margin-bottom: 0;
+    }
+
+    .appDescribe {
+      font-weight: 400;
+      font-size: 14px;
+      color: #8C8C8C;
+      line-height: 22px;
+      margin-bottom: 0;
+    }
+  }
+}

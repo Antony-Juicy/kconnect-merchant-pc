@@ -1,0 +1,97 @@
+.bottomCountContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+
+  .pieItem {
+    background-color: #fff;
+    height: 298px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    padding: 20px 24px;
+
+    .noDataPie {
+      height: 220px;
+      background-size: 240px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .pieTipContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .pieTitle {
+      font-weight: 600;
+      font-size: 16px;
+      color: #262626;
+      line-height: 24px;
+    }
+
+    .pieUpdateTip {
+      font-size: 12px;
+      color: #8C8C8C;
+    }
+
+    .pieLegendContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      width: 50%;
+      margin-right: 16px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      flex: 1;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .bottomCountContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    .pieItem {
+      flex: 100%;
+      margin-right: 0;
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        margin-right: 0px;
+        margin-bottom: 16px;
+      }
+
+      &:nth-child(4) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+  .bottomCountContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    .pieItem {
+      min-width: 428px;
+    }
+  }
+}

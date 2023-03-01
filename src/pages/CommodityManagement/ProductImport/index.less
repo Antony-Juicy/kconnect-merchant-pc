@@ -1,0 +1,133 @@
+.cardItem {
+  margin-bottom: 16px;
+  background: #fff;
+  border-radius: 8px;
+
+  .content {
+    :global {
+      .ant-pro-table {
+        width: 100%;
+
+        .ant-pro-card-body {
+          padding: 0;
+        }
+      }
+
+      .ant-progress-success-bg,
+      .ant-progress-bg {
+        transition: all 1s;
+      }
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .processing {
+      :global {
+        .ant-progress-status-success,
+        .ant-progress-success-bg,
+        .ant-progress-bg {
+          background-color: @primary-color;
+        }
+      }
+
+      display: flex;
+      flex-flow: column wrap;
+      width: 423px;
+
+      .title {
+        margin-bottom: 8px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+.progressBox {
+  min-height: 180px;
+}
+
+.optionLabel {
+  display: flex;
+  justify-content: space-between;
+  height: 34px;
+  margin-bottom: 12px;
+  color: #262626;
+  line-height: 34px;
+
+  .infoBox {
+    display: flex;
+
+    .title {
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .total {
+      margin-left: 12px;
+    }
+  }
+}
+
+.uploadForm {
+  margin-bottom: 24px;
+
+  & > span {
+    display: flex;
+  }
+
+  .uploadBtnBox {
+    display: flex;
+    gap: 16px;
+    width: 500px;
+
+    .uploadFileName {
+      width: 400px;
+      height: 34px;
+      padding: 6px 12px;
+      line-height: 22px;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+    }
+
+    .beforeUpload {
+      color: #bfbfbf;
+    }
+  }
+}
+
+.tips {
+  p {
+    color: #8c8c8c;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.stateWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.onSale::before {
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin-right: 4px;
+    background: #00b42a;
+    border-radius: 50%;
+    content: '';
+  }
+
+  &.offSale::before {
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin-right: 4px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    content: '';
+  }
+}

@@ -1,0 +1,174 @@
+.picture {
+  height: 48px;
+}
+
+.drawerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #262626;
+  font-weight: @fontWeight;
+  font-size: 16px;
+}
+
+.closeIcon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.uploadContainer {
+  display: flex;
+  align-items: flex-end;
+
+  .addPicture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #fafafa;
+    border: 1px dashed #d9d9d9;
+    border-radius: 4px;
+    cursor: pointer;
+
+    .addIcon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .addText {
+      color: #ffa21a;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+
+  .pictureTips {
+    margin-left: 12px;
+    color: #8c8c8c;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .updatePicture {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+
+    .spinLoading {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .editMask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 50%);
+      border-radius: 4px;
+
+      .editIcon {
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin: 6px auto 0;
+      }
+
+      .editText {
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+      }
+    }
+
+    &:hover .editMask {
+      display: block;
+    }
+
+    .pictureItem {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+    }
+  }
+}
+
+.btns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rowsEnpty {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: #262626;
+  font-weight: 400;
+  font-size: 14px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+
+  .name {
+    width: 88px;
+  }
+}
+
+.operationRecord {
+  border-top: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  border-left: 1px solid #f0f0f0;
+  border-radius: 4px;
+
+  .resetBorderBottom {
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #f0f0f0;
+    border-left: none;
+    border-radius: 0;
+  }
+}
+
+.fileUrl {
+  display: block;
+  height: 60px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+
+  .detailBtn {
+    width: 74px;
+    height: 34px;
+    color: #434343;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+  }
+
+  .removeBtn {
+    color: #f53f3f;
+    border: 1px solid #f53f3f;
+  }
+}

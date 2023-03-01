@@ -1,0 +1,38 @@
+.parent-level-wapper, .parent-level-list-wapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  width: 300px;
+  min-height: 40px;
+  padding: 8px;
+
+  .parent-level-item {
+    display: block;
+    min-width: 36px;
+    min-height: 24px;
+    padding: 2px 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    background: #f5f5f5;
+    border-radius: 4px;
+  }
+}
+
+.parent-level-list-wapper {
+  max-height: 66px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.normal-border {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.error-border {
+  border-color: #f53f3f !important;
+}

@@ -1,0 +1,369 @@
+
+.ora-others-icon {
+  flex-shrink: 0;
+  width: 27px;
+  height: 24px;
+  margin-right: 19px;
+}
+
+.ora-skeleton {
+  padding-right: 24px;
+}
+
+.ora-left-title-item-avatar{
+  display: inline-block;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  margin: 0;
+  margin-right: 24px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  overflow: hidden;
+  object-fit: cover;
+}
+.ora-left-title-avatar {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  margin-right: 24px;
+  background: #FBA21F;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFF;
+  text-align: center;
+  object-fit: cover;
+}
+
+.ora-left{
+  width: 371px;
+  height:calc(100vh - 164px);;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  padding-right: 0;
+  margin-right: 24px;
+
+  .ora-left-tree {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .ora-left-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    margin-right: 24px;
+  }
+  .text-name-style {
+    font-size:16px;
+  }
+
+  .ora-left-content {
+    margin-right: 24px;
+    .ora-left-content-item {
+      display: flex;
+      align-items: center;
+      height: 48px;
+      padding: 12px 26px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      &:hover {
+        background-color: #F7F7F7;
+      }
+    }
+    .ora-left-content-active {
+      background: rgba(255,164,0,0.10);
+      .text-name-style {
+        color:#FFA400;
+      }
+    }
+
+  }
+}
+
+.ora-right{
+  :global {
+    .ant-btn > .anticon + span, .ant-btn > span + .anticon {
+      margin-left: 2px !important;
+    }
+
+    .ora-right-spin > .ant-spin-container {
+      height: calc(100vh - 212px);
+      overflow: hidden;
+    }
+  }
+
+  position: relative;
+  width: 0;
+  height:calc(100vh - 164px);;
+  overflow: hidden;
+  padding: 24px;
+  padding-right: 0;
+  background: #fff;
+  border-radius: 16px;
+  .ora-right-btn-group {
+    margin-bottom: 24px;
+  }
+
+  .ora-right-menu-list {
+    width: 120px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    padding: 8px;
+    .ora-right-menu-list-item {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #fff;
+      cursor: pointer;
+      &:hover {
+        background: #F7F7F7;
+      }
+      &:active {
+        background: rgba(255,164,0,0.10);
+        border: 1px solid #FFA400;
+      }
+    }
+  }
+
+  .ora-right-breadcrumb-simple-item {
+    vertical-align: super;
+    cursor: pointer;
+  }
+
+  .ora-right-breadcrumb-wapper {
+    :global {
+      .ant-breadcrumb-link {
+        cursor: pointer;
+      }
+      .ant-breadcrumb-link,
+      .ant-breadcrumb-separator {
+        display: inline-block;
+        height: 19px;
+        overflow: hidden;
+        line-height: 19px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .ant-breadcrumb-separator {
+        width: auto;
+      }
+    }
+
+    .ora-right-breadcrumb-root {
+      :global {
+        span:last-child .ant-breadcrumb-separator {
+          display: inline-block;
+        }
+      }
+    }
+
+    & > span {
+      float: left;
+    }
+
+    .ora-right-breadcrumb-active {
+      color: @primary-color;
+    }
+
+    .ora-right-breadcrumb-simple-item {
+      vertical-align: super;
+      cursor: pointer;
+    }
+
+    .ora-right-breadcrumb-normal {
+      color: #afadab;
+      cursor: default;
+    }
+
+    margin-top: 26px;
+    overflow: hidden;
+  }
+
+  .ora-right-breadcrumb {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 30px;
+    margin-right: 24px;
+    .nice-scroll();
+  }
+
+  .ora-left-title {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+  }
+
+  .ora-right-btn {
+    background: @primary-color;
+    border: 1px solid @primary-color;
+    border-radius: 8px;
+  }
+
+  .ora-right-dept-list {
+    :global {
+      .ant-list-pagination {
+        text-align: center;
+      }
+    }
+
+    margin-bottom: 24px;
+  }
+
+  .ora-right-person-list {
+    :global {
+      .ant-list-pagination {
+        text-align: center;
+      }
+    }
+
+    margin-bottom: 24px;
+
+    .ora-right-person-item {
+      cursor: pointer;
+      padding-left: 24px;
+      border-radius: 8px;
+      &:hover {
+        background: #F7F7F7;
+      }
+      .ora-right-person-item-content {
+        display: flex;
+        align-items: center;
+      }
+
+      .ora-right-person-item-tag {
+        width: 32px;
+        margin-left: 6px;
+        background: #FFA400;
+        border-radius: 1px;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        flex-shrink: 0;
+      }
+
+      .ora-right-person-item-name {
+        font-size: 16px;
+      }
+
+      .ora-right-person-name-content {
+        display: flex;
+        align-items: center;
+      }
+
+      .ora-right-person-item-position {
+        color: #AFADAB;
+      }
+    }
+
+    .ora-right-person-item-avatar {
+      width: 48px;
+      height: 48px;
+      margin-right: 24px;
+      border: 0.5px solid #E8E8E8;
+      border-radius: 50%;
+    }
+
+    .ora-right-popover-wapper {
+      .ora-right-popover-item-avatar {
+        width: auto !important;
+        height: auto !important;
+        max-width: 300px !important;
+        max-height: 300px !important;
+      }
+    }
+
+    .ora-right-person-circle-avatar {
+      display: block;
+      width: 48px;
+      height: 48px;
+      line-height: 2.6;
+      background: #FBA21F;
+      border-radius: 50%;
+      font-weight: @fontWeight;
+      font-size: 17px;
+      color: #FFF;
+      text-align: center;
+      object-fit: cover;
+      margin-right: 24px;
+      border: 0.5px solid #E8E8E8;
+      flex-shrink: 0;
+    }
+  }
+
+  .ora-right-sub-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ora-right-sub-title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+  .ora-add-dept-btn {
+    background: rgba(255,164,0,0.10);
+    color: #FFA400;
+    border: none;
+    border-radius: 4px;
+  }
+  .ora-del-user-btn {
+    color: #FC2C2C;
+    border: none;
+    background: rgba(252,44,44,0.05);
+    border-radius: 4px;
+  }
+  .ora-del-user-icon {
+    position: relative;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+  .ora-right-divider {
+    margin: 17px 0;
+    color: #e8e8e8;
+  }
+  .ora-right-list-item {
+    height: 72px;
+    padding: 0 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      background: #F7F7F7;
+    }
+  }
+  .ora-right-list-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .ora-right-list-item-name {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+  }
+  .ora-right-sub-content {
+    height: calc(100% - 125px);
+    padding-right: 24px;
+    overflow: auto;
+  }
+}

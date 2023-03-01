@@ -1,0 +1,228 @@
+.announceDrawer {
+
+  :global {
+    .ant-drawer-body {
+      padding: 0;
+    }
+  }
+
+  .announceContent {
+    display: flex;
+  }
+
+  .iconContainer {
+    background: linear-gradient(90deg, #f0f0f0 72px, transparent 1%);
+    width: 75.9px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 57px) !important;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #D9D9D9;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+    }
+
+    :global {
+      .ant-badge-dot {
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+    .iconItem {
+      height: 72px;
+      width: 72px;
+      padding: 16px;
+      cursor: pointer;
+    }
+
+
+    .iconSelected {
+      background-color: #fff;
+      border-radius: 8px 0px 0px 8px;
+
+
+
+      ::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        top: -24px;
+        right: -16px;
+        position: absolute;
+        background: radial-gradient(circle at 0% 0%, #f0f0f0 0 8px, #fff 8px 100%);
+      }
+
+      ::after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        top: 56px;
+        right: -16px;
+        position: absolute;
+        background: radial-gradient(circle at 0% 100%, #f0f0f0 0 8px, #fff 8px 100%);
+      }
+    }
+
+    .iconSelectedFirst {
+      background-color: #fff;
+      border-radius: 0px 0px 0px 8px;
+
+      ::after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        top: 56px;
+        right: -16px;
+        position: absolute;
+        background: radial-gradient(circle at 0% 100%, #f0f0f0 0 8px, #fff 8px 100%);
+      }
+    }
+
+    .iconSelectedLast {
+      background-color: #fff;
+      border-radius: 8px 0px 0px 8px;
+      position: relative;
+
+      ::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        top: -24px;
+        right: -16px;
+        position: absolute;
+        background: radial-gradient(circle at 0% 0%, #f0f0f0 0 8px, #fff 8px 100%);
+      }
+
+      ::after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        top: 56px;
+        right: -16px;
+        position: absolute;
+        background: radial-gradient(circle at 0% 100%, #f0f0f0 0 8px, #fff 8px 100%);
+      }
+
+
+    }
+
+    .imgContainer {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .detailContainer {
+    height: calc(100vh - 57px) !important;
+    overflow-y: auto;
+    flex: 1;
+    background-color: #fff;
+    padding: 24px;
+    overflow-y: auto;
+
+    .appContainer {
+      cursor: pointer;
+
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #F7F7F7;
+      border-radius: 4px;
+      height: 72px;
+      margin-bottom: 24px;
+
+      .applogo {
+        height: 40px;
+        width: 40px;
+        margin-right: 12px;
+      }
+
+      .appName {
+        font-weight: 500;
+        flex: 1;
+        text-align: left;
+        font-size: 16px;
+        color: #262626;
+        line-height: 24px;
+        margin-right: 16px;
+        margin-bottom: 0;
+        word-break: break-all;
+      }
+
+      .guide {
+        font-weight: 400;
+        font-size: 14px;
+        color: #262626;
+        line-height: 22px;
+      }
+
+      .rightArrow {
+        color: #292929;
+        margin-left: 6px;
+      }
+    }
+
+    .infoContainer {
+      padding: 16px 16px 0 16px;
+      cursor: pointer;
+
+
+      :global {
+        .ant-divider-horizontal {
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+      }
+
+      .infoTitle {
+        font-weight: 500;
+        font-size: 16px;
+        color: #262626;
+        line-height: 24px;
+        margin-bottom: 4px;
+        word-break: break-all;
+      }
+
+      .infoDate {
+        font-weight: 400;
+        font-size: 12px;
+        color: #8C8C8C;
+        line-height: 20px;
+        margin-bottom: 12px;
+      }
+
+      .infoContent {
+        font-weight: 400;
+        font-size: 14px;
+        color: #505050;
+        line-height: 22px;
+        margin-bottom: 16px;
+      }
+
+    }
+
+    .noticeBottomTip {
+      width: 100%;
+      margin-top: 24px;
+      font-size: 14px;
+      color: #BFBFBF;
+      text-align: center;
+      line-height: 22px;
+      display: flex;
+      justify-content: center;
+    }
+
+  }
+}

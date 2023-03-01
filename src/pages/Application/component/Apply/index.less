@@ -1,0 +1,155 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  :global {
+    .ant-modal-content .ant-modal-footer {
+      justify-content: center;
+      margin-top: 0;
+      padding: 0 24px 40px
+    }
+
+    .ant-modal-content .ant-modal-body {
+      padding: 8px 40px 0;
+    }
+
+    .ant-form-item-label>label:not(.ant-form-item-required-mark-optional)::before {
+      margin-right: 0;
+
+    }
+
+    .ant-form-item-label>label {
+      color: #262626;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+
+    }
+
+    .ant-form-item-explain-error {
+      text-align: left;
+    }
+
+    .ant-radio-group {
+      display: flex;
+      justify-content: space-between;
+
+      .ant-radio-wrapper {
+        margin-right: 0;
+
+        span {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .subTitleContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .subTitle {
+    width: 300px;
+    color: #8c8c8c;
+    font-weight: 400;
+    width: 300px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+
+
+  }
+
+  .form {
+    margin-top: 16px;
+    padding: 0 80px;
+
+    .input {
+      height: 34px;
+    }
+
+    .dataPicker {
+      width: 100%;
+      height: 34px;
+    }
+  }
+}
+
+.titleWrap {
+  display: flex;
+  align-items: center;
+  text-align: left;
+
+  .modalIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  .title {
+    color: #262626;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}
+
+.btn {
+  width: 100px;
+}
+
+.successModal {
+  height: 193px;
+
+  .successContent {
+    color: #262626;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  :global {
+    .ant-modal-header {
+      padding-left: 24px;
+    }
+
+    .ant-modal-body {
+      padding-top: 16px;
+    }
+
+    .ant-modal-footer {
+      display: flex;
+      justify-content: flex-end;
+      border: none;
+    }
+  }
+
+  .titleWrap {
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    .modalIcon {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .title {
+      color: #262626;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+  }
+
+}
+
+.none {
+  display: none;
+}

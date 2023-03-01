@@ -1,0 +1,6 @@
+registry=https://nexus.kpay-group.com/repository/kpay-npm-group/
+
+always-auth=true
+
+# 賬戶名:密碼 base64值
+_auth=""

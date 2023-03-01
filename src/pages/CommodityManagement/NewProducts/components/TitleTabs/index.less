@@ -1,0 +1,53 @@
+.wrapper {
+  height: 46px;
+  background: #fff;
+
+  .tabsItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 46px;
+    margin-right: 24px;
+    cursor: pointer;
+
+    .text {
+      color: #8c8c8c;
+      font-weight: 400;
+      font-size: 14px;
+
+      &.activeText {
+        color: #262626;
+        font-weight: bold;
+      }
+    }
+
+    .line {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 40px;
+      height: 4px;
+      background: #fff;
+      border-radius: 100px 100px 0 0;
+      transform: translateX(-50%);
+
+      &.activeLine {
+        background: #ffa21a;
+      }
+    }
+  }
+}
+
+:global {
+  .ant-anchor-fixed {
+    display: flex;
+  }
+
+  .ant-anchor-ink {
+    display: none;
+  }
+
+  .ant-anchor-link {
+    padding: 0;
+  }
+}

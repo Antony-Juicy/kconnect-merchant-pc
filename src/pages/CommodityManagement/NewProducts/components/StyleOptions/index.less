@@ -1,0 +1,170 @@
+.wrapper {
+  .columnTitle {
+    margin-bottom: 24px;
+    color: #262626;
+    font-weight: @fontWeight;
+    font-size: 16px;
+  }
+
+  .formRows {
+    display: flex;
+    flex-wrap: wrap;
+    .formItem {
+      position: relative;
+      width: 374px;
+
+      .spacerLine {
+        position: absolute;
+        top: calc(50% + 4px);
+        right: 12px;
+        width: 16px;
+        height: 2px;
+        background: #d8d8d8;
+        border-radius: 1px;
+      }
+    }
+
+    .optionValueWidth {
+      width: 342px;
+    }
+
+    .staging {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+
+      .saveContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        cursor: pointer;
+
+        .saveIcon {
+          width: 22px;
+          height: 22px;
+        }
+      }
+
+      .closeOption {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .itemLabel {
+    color: #262626;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .customLabel {
+    margin: -10px 0 0 -10px;
+    color: #262626;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .description {
+    margin-left: 6px;
+    color: #8c8c8c;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .inputWidth {
+    width: 334px;
+  }
+
+  .mt8 {
+    margin-top: 8px;
+  }
+
+  .mb8 {
+    margin-bottom: 8px;
+  }
+
+  .ml10 {
+    margin-left: -10px;
+  }
+
+  .mt24 {
+    margin-top: 24px;
+  }
+
+  .mb24 {
+    margin-bottom: 24px;
+  }
+
+  .statusItem {
+    color: #262626;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .removeIcon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  // 款式选项
+  .styleOptionsContainer {
+    margin-top: 16px;
+
+    .optionLabel {
+      margin-bottom: 12px;
+      color: #262626;
+      font-weight: @fontWeight;
+      font-size: 16px;
+    }
+
+    .category {
+      margin-bottom: 12px;
+      color: #262626;
+      font-weight: 400;
+      font-size: 12px;
+    }
+
+    .dropIcon {
+      width: 22px;
+      height: 22px;
+      cursor: pointer;
+    }
+
+    .combination {
+      display: flex;
+      align-items: center;
+
+      .addOption {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 142px;
+        height: 34px;
+        margin-right: 16px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        cursor: pointer;
+
+        .optionIcon {
+          width: 22px;
+          height: 22px;
+          margin-right: 2px;
+        }
+
+        .btnOptionText {
+          color: #262626;
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

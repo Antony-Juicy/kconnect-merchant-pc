@@ -1,0 +1,379 @@
+.feedbackWrap {
+  :global {
+    .ant-checkbox-wrapper .ant-checkbox-wrapper-in-form-item {
+      span {
+        color: #262626;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+    }
+
+
+    .ant-modal-content .ant-modal-footer {
+      justify-content: center;
+      margin-top: 0;
+      padding: 0 24px 40px
+    }
+
+    .ant-modal-content .ant-modal-body {
+      padding: 8px 40px 0 !important;
+    }
+
+    .ant-form-item-label>label:not(.ant-form-item-required-mark-optional)::before {
+      margin-right: 0;
+
+    }
+
+    .ant-form-item-label>label {
+      color: #262626;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+
+    }
+
+    .ant-form-item-explain-error {
+      text-align: left;
+    }
+
+    .ant-form-item-control-input-content {
+      flex: inherit;
+
+      .ant-checkbox-group-item {
+        margin-right: 40px;
+      }
+    }
+
+  }
+
+  .subTitle {
+    max-width: 600px;
+    margin-bottom: 12px;
+    color: #8c8c8c;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+
+  }
+
+  .btn {
+    width: 100px;
+  }
+
+  .appSelect {
+    :global {
+      .ant-select-selector {
+        max-width: 280px;
+        max-height: 155px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+          width: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: #f7f7f7;
+          border-radius: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #afadab;
+          border-radius: 5px;
+        }
+      }
+
+    }
+
+  }
+
+
+
+
+  .form {
+    margin-top: 22px;
+    padding: 0;
+
+    :global {
+      .ant-radio-wrapper-in-form-item {
+        margin-right: 35px;
+      }
+    }
+  }
+
+  .queItem {
+    display: flex;
+    justify-content: flex-start;
+    width: 145px;
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      padding-left: 16px;
+
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 16px;
+
+    }
+
+  }
+
+  .useServer {
+    margin-bottom: 18px;
+
+    :global {
+      .ant-radio-wrapper-in-form-item {
+        margin-right: 75px;
+      }
+    }
+  }
+
+  .selectAppCol {
+    position: absolute;
+    top: 137px;
+    left: 350px;
+
+    :global {
+      .ant-select {
+        width: 280px;
+        min-height: 34px;
+
+        .ant-select-selector {
+          width: 280px;
+          height: inherit;
+          min-height: 34px;
+          background-color: #fff;
+          border: 1px solid #d9d9d9;
+          border-radius: 4px;
+        }
+
+        .ant-select-selection-placeholder {
+          color: #bfbfbf;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: left;
+        }
+
+        .ant-select-selection-item {
+          width: 100%;
+          color: #262626;
+          font-weight: 400;
+          font-size: 14px;
+          text-align: left;
+        }
+      }
+
+    }
+
+
+  }
+
+  .consultArea {
+    width: 600px;
+    height: 68px;
+    border-radius: 4px;
+
+  }
+
+  .contactMethodInput {
+    width: 164px;
+    height: 34px;
+    border-radius: 4px;
+
+  }
+
+  .otherContact {
+    :global {
+      .ant-checkbox-wrapper-in-form-item {
+        span {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .contactMethod {
+    position: relative;
+
+    :global {
+      .ant-form-item {
+        margin-bottom: 20px;
+      }
+
+    }
+
+    .contactMethodError {
+      position: absolute;
+      height: 16px;
+      margin-top: -20px;
+      color: #f53f3f;
+      font-size: 12px;
+      text-align: left;
+      background-color: #fff;
+    }
+  }
+
+  .contactMethodTitle {
+    margin-bottom: 6px;
+    color: #262626;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .appUseFlag {
+    margin-bottom: 20px;
+  }
+
+  .rating {
+    margin-bottom: 16px;
+
+    :global {
+      .ant-radio-wrapper-in-form-item {
+        margin-right: 20px;
+      }
+    }
+  }
+
+
+  .used {
+    margin-right: 80px;
+  }
+
+
+
+  .feedbackTypeWrap {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+
+    .feedbackType {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      color: #262626;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: left;
+    }
+
+    :global {
+      .ant-select {
+        width: 280px;
+        height: 34px;
+
+        .ant-select-selector {
+          width: 280px;
+          height: 34px;
+          height: inherit;
+          background-color: #fff;
+          border: 1px solid #d9d9d9;
+          border-radius: 4px;
+        }
+
+        .ant-select-selection-placeholder {
+          color: #262626;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: left;
+        }
+
+        .ant-select-selection-item {
+          width: 100%;
+          color: #262626;
+          font-weight: 400;
+          font-size: 14px;
+          text-align: left;
+        }
+      }
+
+    }
+
+  }
+
+  .selectCloseIcon {
+    position: relative;
+    top: -3px;
+    right: 6px;
+    width: 18px;
+    height: 18px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+
+  }
+
+  .selectArrowIcon {
+    position: relative;
+    width: 18px;
+    height: 18px;
+  }
+
+
+
+}
+
+.FirstTag {
+  max-width: 280px;
+}
+
+.none {
+  display: none;
+}
+
+.successModal {
+  height: 193px;
+
+  .successContent {
+    color: #262626;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  :global {
+    .ant-modal-body {
+      padding-top: 16px;
+    }
+
+    .ant-modal-header {
+      padding-left: 24px;
+    }
+
+    .ant-modal-footer {
+      display: flex;
+      justify-content: flex-end;
+      border: none;
+    }
+  }
+
+  .titleWrap {
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    .modalIcon {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .title {
+      color: #262626;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+  }
+
+}

@@ -1,0 +1,115 @@
+.toolBarRender {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currencyTitle {
+  margin-bottom: 24px;
+  color: #262626;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.rows {
+  display: flex;
+  align-items: center;
+  color: #262626;
+  font-weight: 400;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+
+  .label {
+    flex-shrink: 0;
+    width: 152px;
+    padding: 12px 0 12px 16px;
+  }
+
+  .content {
+    flex: 1;
+    padding: 12px 16px;
+    border-left: 1px solid #f0f0f0;
+    word-break: break-word;
+    .categoryList {
+      display: flex;
+      flex-wrap: wrap;
+
+      .categoryItem {
+        margin-right: 8px;
+        padding: 2px 6px;
+        color: #262626;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        background: #f5f5f5;
+      }
+    }
+  }
+}
+
+.rowsEnpty {
+  display: flex;
+  align-items: flex-start;
+  padding: 12px 16px;
+  color: #262626;
+  font-weight: 400;
+  font-size: 14px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+
+  .name {
+    width: 153px;
+  }
+}
+// 商品資料
+.infoContainer {
+  border-radius: 8px;
+
+  .productInfo {
+    border-top: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    border-left: 1px solid #f0f0f0;
+    border-radius: 4px;
+
+    .pictureList {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 12px;
+
+      .pictureItem {
+        height: 40px;
+      }
+    }
+  }
+}
+
+.optionsContainer,
+.inventoryContainer,
+.otherContainer {
+  margin-top: 16px;
+  border-radius: 8px;
+}
+
+.operationRecord {
+  margin-top: 24px;
+  border-top: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  border-left: 1px solid #f0f0f0;
+  border-radius: 4px;
+
+  .resetBorderBottom {
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #f0f0f0;
+    border-left: none;
+    border-radius: 0;
+  }
+}
+
+.webViewContent {
+  img {
+    width: 100% !important;
+  }
+}

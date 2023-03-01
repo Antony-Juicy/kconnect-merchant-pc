@@ -1,0 +1,110 @@
+.appItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(50% - 12px);
+  height: 225px;
+  margin-bottom: 24px;
+  padding: 16px 16px 0;
+  // min-width: 500px;
+  background: #f5f5f5;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:nth-child(2n+1) {
+    margin-right: 24px;
+  }
+
+  .topContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  .topLeftContainer {
+    display: flex;
+    width: 70%;
+  }
+
+  .highLight {
+    max-height: 90px;
+    overflow: hidden;
+  }
+
+  .topCenterContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+
+    .appName {
+      margin-bottom: 2px;
+      color: #262626;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .appDescribe {
+      margin-bottom: 0;
+      color: #8c8c8c;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  .appIcon {
+    width: 51px;
+    height: 48px;
+  }
+
+  .star {
+    z-index: 999;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+  }
+
+  .topRightContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: left;
+    width: 24px;
+  }
+
+  .appTip {
+    margin-bottom: 5px;
+    color: #262626;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .subTip {
+    margin-bottom: 8px;
+    color: #8c8c8c;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .bottomContainer {
+    display: flex;
+    align-items: center;
+    width: calc(100% + 32px);
+    height: 51px;
+    margin-left: -16px;
+    padding-left: 15px;
+    background-color: #fff;
+    border-top: 1px solid #f0f0f0;
+
+    .price {
+      color: #ffa21a;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+  }
+}
