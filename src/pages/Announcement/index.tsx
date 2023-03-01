@@ -125,7 +125,7 @@ const Announcement: React.FC = () => {
                             <div className={Style.AvatarTar}>
                               <div className={Style.Avatar}>{item.title}</div>
                               <div className={Style.Tar}>
-                                {moment(Number(item.modifyTime)).format('DD/MM/YYYY ')}
+                                {moment(Number(item.modifyTime)).format('DD/MM/YYYY ')}{' '}
                               </div>
                             </div>
                           </div>
