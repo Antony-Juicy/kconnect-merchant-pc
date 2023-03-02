@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input, Select, DatePicker, InputNumber } from 'antd';
+import { Form, Input, Select, DatePicker as DatePick, InputNumber } from 'antd';
 import classNames from 'classnames';
 import styles from './index.less';
 import BraftEditor from 'braft-editor';
@@ -28,6 +28,7 @@ interface CustomFormProps {
   pageChangeValue: () => void;
 }
 
+const DatePicker: any = DatePick;
 const CustomForm: React.FC<CustomFormProps> = (props) => {
   const { templateList, formInstance, pageChangeValue } = props;
 
