@@ -186,7 +186,6 @@ const ProCards: React.FC = () => {
       return false;
     }
   };
-
   // 定时器 页面跳转
   const countDown = () => {
     timeChange = setInterval(() => setSec((t) => --t), 1000);
@@ -441,7 +440,7 @@ const ProCards: React.FC = () => {
                     {arr.map((item, index) => {
                       // console.log(index,check)
                       return (
-                        <Form>
+                        <Form key={item}>
                           <Form.Item
                             rules={[
                               {

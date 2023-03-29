@@ -35,6 +35,7 @@ const Announcement: React.FC = () => {
 
   // 详情 点击
   const gestDeptInfo = (id: string, index: any) => {
+    console.log(id, 'id');
     setTitleavatar(index);
     if (currentId !== id && !detailsLoading) {
       showDetailsLoading();
@@ -61,7 +62,7 @@ const Announcement: React.FC = () => {
   // 公告分頁列表
   const Announcementlist = async () => {
     showListsLoading();
-    const paginated = await merchantApi
+    merchantApi
       .getDocumentationUpdateAnnouncementListPage({ page: '1', rows: '100' })
       .then((res: IApiResponse<DocumentationUpdateAnnouncementListPageResponse>) => {
         hideListsLoading();
